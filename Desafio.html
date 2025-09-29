@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula CSS - Flexbox</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+            background-color: #faebd7;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        .caixa.pai {
+            display: flex;
+            flex-direction: column;
+            height: 80vh;
+            border: 1px solid #000;
+            padding: 10px;
+        }
+
+        .caixa.filho {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            font-size: 24px;
+            color: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px;
+        }
+
+        .cor1 { background-color: #e91e63; align-self: flex-start; }
+        .cor2 { background-color: #4db6ac; align-self: flex-end; margin-top: auto; }
+        .cor3 { background-color: #f4a936; align-self: center; margin-top: auto; margin-bottom: auto; }
+    </style>
+</head>
+<body>
+    <h1>Desafio flex-box</h1>
+    <div class="caixa pai">
+        <div class="caixa filho cor1">1</div>
+        <div class="caixa filho cor3">3</div>
+        <div class="caixa filho cor2">2</div>
+    </div>
+</body>
+</html>
